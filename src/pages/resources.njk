@@ -1,0 +1,50 @@
+---
+title: Resources
+permalink: /resources/index.html
+description: 'A list of useful resources relating to population genomics and biodiversity genomics more broadly. Add yours by submitting a pull request!'
+layout: page
+sizes: '(max-width: 615px) 50vw, 100vw'
+widths: [400, 520]
+---
+
+<p>
+  Find here some potentially useful resources - for those who want to find out more!
+</p>
+
+{#
+<p>
+  Have a suggestion for a resource to be added here? Get in touch with us via email or open an issue on 
+  <a
+    href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request"
+    rel="noopener"
+    >GitHub</a
+  >.
+</p>
+ #}
+ 
+<article class="full section" style="--spot-color: var(--color-bg-accent)">
+  {% svg "divider/soft-top", null, "seperator" %}
+
+  <section class="feature section__inner wrapper">
+    <h2>External Links</h2>
+    <div
+      class="feature grid region"
+      style="--region-space-top: var(--space-xl); --gutter: var(--space-xl) var(--space-xs)"
+    >
+      <!-- you find tha data for that in src/_data/resources.json -->
+      {% for site in resources | shuffle %}
+        <custom-card clickable img-square class="text-step-min-1" style="--card-bg: var(--color-bg)">
+          {% image "./src/assets/images/screenshots/" + site.filename + ".jpg", site.name, null, "lazy", null, sizes, widths %}
+          <h3 class="text-step-0" slot="headline">{{ site.name }}</h3>
+
+          <p slot="content">{{ site.description }}</p>
+          <footer slot="footer">
+            <a class="no-indicator" href="{{ site.link }}">{{ site.link | replace("https://", "") }}</a>
+          </footer>
+        </custom-card>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% svg "divider/soft-bottom", null, "seperator" %}
+</article>

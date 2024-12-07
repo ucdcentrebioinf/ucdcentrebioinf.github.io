@@ -1,0 +1,102 @@
+---
+font: "'Red Hat Display', Ubuntu" # These get created in development, you must have the font installed on your system.
+background: '#343434'
+text: '#FBFBFB'
+colors: ['#6daa2c', '#5d982b', '#4e872a', '#407627', '#346524']
+siteUrl: 'tridubire.github.io'
+pagination:
+  data: collections.posts
+  size: 1
+  alias: post
+permalink: '/assets/og-images/{{ post.data.title | slugify }}-preview.svg'
+eleventyExcludeFromCollections: true
+---
+
+<svg
+  width="1200"
+  height="630"
+  viewBox="0 0 1200 630"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  {% set titleInLines = post.data.title | splitlines(22) %}
+  {% set numberOfLines = titleInLines.length %}
+  {% if numberOfLines == 1 %}
+    {% set verticalStartingPoint = 340 %}
+    {% elseif numberOfLines == 2 %}
+    {% set verticalStartingPoint = 290 %}
+    {% elseif numberOfLines == 3 %}
+    {% set verticalStartingPoint = 250 %}
+    {% elseif numberOfLines == 4 %}
+    {% set verticalStartingPoint = 210 %}
+    {% elseif numberOfLines == 5 %}
+    {% set verticalStartingPoint = 170 %}
+  {% endif %}
+
+  <!-- SVG background, generate your own on: https://app.haikei.app/ or  https://pattern.monster/ -->
+  <g viewBox="0 0 1200 630" width="1200" height="630">
+  <path 
+    d="M0 146L109 190L218 247L327 165L436 165L545 215L655 83L764 177L873 285L982 196L1091 133L1200 165L1200 0L1091 0L982 0L873 0L764 0L655 0L545 0L436 0L327 0L218 0L109 0L0 0Z" 
+    fill="{{ colors[0] }}">
+  </path>
+  <path 
+    d="M0 184L109 291L218 341L327 234L436 272L545 310L655 190L764 253L873 366L982 240L1091 203L1200 272L1200 163L1091 131L982 194L873 283L764 175L655 81L545 213L436 163L327 163L218 245L109 188L0 144Z" 
+    fill="{{ colors[1] }}">
+  </path>
+  <path 
+    d="M0 310L109 417L218 398L327 354L436 354L545 366L655 278L764 354L873 429L982 291L1091 297L1200 366L1200 270L1091 201L982 238L873 364L764 251L655 188L545 308L436 270L327 232L218 339L109 289L0 182Z" 
+    fill="{{ colors[2] }}">
+  </path>
+  <path 
+    d="M0 467L109 486L218 537L327 461L436 423L545 429L655 398L764 518L873 499L982 461L1091 423L1200 499L1200 364L1091 295L982 289L873 427L764 352L655 276L545 364L436 352L327 352L218 396L109 415L0 308Z" 
+    fill="{{ colors[3] }}">
+  </path>
+  <path 
+    d="M0 631L109 631L218 631L327 631L436 631L545 631L655 631L764 631L873 631L982 631L1091 631L1200 631L1200 497L1091 421L982 459L873 497L764 516L655 396L545 427L436 421L327 459L218 535L109 484L0 465Z" 
+    fill="{{ colors[4] }}">
+  </path>
+  </g>
+
+  <!-- if you need to darken or lighten your bg -->
+  <rect id="bg" width="100%" height="100%" opacity="0.1" fill="{{ background }}" />
+
+  <!-- date -->
+  <text
+    font-family="{{ font }}, sans-serif"
+    font-size="24"
+    font-weight="900"
+    fill="{{ text }}"
+    letter-spacing="-1"
+  >
+    <tspan x="160" y="{{ verticalStartingPoint - 120 }}">
+      {{ post.date | formatDate('DD / MM / YYYY') }}
+    </tspan>
+  </text>
+
+  <!-- title -->
+  <text
+    id="text"
+    font-family="{{ font }}, sans-serif"
+    font-size="80"
+    font-weight="900"
+    fill="{{ text }}"
+    letter-spacing="-3"
+  >
+    {% for line in titleInLines %}
+      <tspan x="160" y="{{ verticalStartingPoint - 20 + loop.index0 * 85 }}"> {{ line }} </tspan>
+    {% endfor %}
+  </text>
+
+  <!-- sitename / url -->
+  <text
+    font-family="{{ font }}, sans-serif"
+    font-size="24"
+    font-weight="500"
+    fill="{{ text }}"
+    letter-spacing="-0.5"
+  >
+    <!-- <tspan x="160" y="580">{{ meta.siteName }} · {{ meta.url | replace("https://", "") | replace("http://", "") }}</tspan> -->
+    <tspan x="160" y="580">{{ meta.siteName }} — {{ siteUrl }}</tspan>
+  </text>
+</svg>

@@ -22,7 +22,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tridubire/tridubire.gibhub.io.git"
+    "url": "https://github.com/ucdcentrebioinf/ucdcentrebioinf.github.io.git"
   },
   "dependencies": {
     "@11ty/eleventy": "3.0.0-alpha.14",

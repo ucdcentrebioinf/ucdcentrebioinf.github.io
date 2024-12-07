@@ -1,0 +1,3 @@
+[upstream] providers = [{ domain = 'github.com', service =
+'cdn' }] [org] credentials =
+[]

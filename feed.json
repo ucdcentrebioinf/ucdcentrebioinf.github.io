@@ -1,0 +1,22 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "UCDCentreBioinf",
+  "language": "en",
+  "home_page_url": "http://localhost:8080/",
+  "feed_url": "http://localhost:8080/feed.json",
+  "description": "Keep in touch with the UCD Centre for Bioinformatics.",
+  "authors": [
+    {
+      "name": "Graham Hughes"
+    }
+  ],
+  "items": [{
+      "id": "http://localhost:8080/blog/%F0%9F%93%A2-stay-tuned/",
+      "url": "http://localhost:8080/blog/%F0%9F%93%A2-stay-tuned/",
+      "title": "📢 Stay tuned!",
+      "content_html": "<p>More coming soon! Keep an eye both here and on socials for new project updates.</p>\n",
+      "date_published": "2024-07-17T00:00:00Z"
+    }
+    
+  ]
+}

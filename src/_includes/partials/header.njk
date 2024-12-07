@@ -1,0 +1,25 @@
+<a href="#main" class="skip-link">{{ meta.skipContent }}</a>
+
+<header class="wrapper">
+  <div class="site-header | repel ontop">
+    <a href="/" class="logo" | cluster" {% if page.url == "/" %}aria-current="page"{% endif %}>
+    <div style="display: flex;">
+      <div style="margin-top: 1.5%;">
+        {% svg "misc/logo", null, null, "block-size: 3.5ex;" %} |
+      </div>
+      <div style="margin-left: 10px;">
+        <h4 class="font-display">{{ meta.siteName }}</h4>
+        <p style="line-height: var(--size-step-min-2); font-size: var(--size-step-min-1); font-weight: 300; text-align: center;">
+          <em>UCD Centre for Bioinformatics
+        </p>
+      </div>
+    </div>
+      
+    </a>
+    
+    <div class="cluster">
+      {% include "partials/main-nav.njk" %}
+    </div>
+  </div>
+</header>
+

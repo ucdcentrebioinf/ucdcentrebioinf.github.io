@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Biodiversity Genomics Europe (BGE)",
+    "description": "Access resources on DNA barcoding and genome sequencing, and find information on conservation initiatives and citizen science opportunities.",
+    "filename": "bga",
+    "link": "https://biodiversitygenomics.eu/"
+  },
+  {
+    "name": "European Reference Genome Atlas (ERGA)",
+    "description": "Find out more about the European effort to sequence and generate high-quality reference genomes for all of Europe's eukaryotic life.",
+    "filename": "erga",
+    "link": "https://www.erga-biodiversity.eu/"
+  },
+  {
+    "name": "National Biodiversity Data Centre (NBDC)",
+    "description": "Find Ireland’s biodiversity data, as well as educational resources on species identification and conservation efforts across the country.",
+    "filename": "nbdc",
+    "link": "https://biodiversityireland.ie/"
+  },
+  {
+    "name": "Botanical Society of Britain and Ireland (BSBI)",
+    "description": "Explore resources for studying wild plants, access plant distribution data and find information on how to get involved in botanical surveys and conservation activities across Britain and Ireland.",
+    "filename": "bsbi",
+    "link": "https://bsbi.org/"
+  }
+]

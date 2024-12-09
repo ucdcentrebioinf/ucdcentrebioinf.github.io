@@ -1,5 +1,5 @@
 export const url = process.env.URL || 'http://localhost:8080';
-export const siteName = 'UCDCentreBioinf'
+export const siteName = 'UCD Centre for Bioinformatics'
 export const siteDescription = 'The virtual UCD Centre for Bioinformatics';
 export const siteType = 'Person'; // schema
 export const locale = 'en_EN';
@@ -9,13 +9,13 @@ export const author = {
   name: 'Graham Hughes', // i.e. Graham Hughes - page / blog author's name. Must be set.
   avatar: '/icon-512x512.png', // path to the author's avatar. In this case just using a favicon.
   email: 'g.hughes@ucd.ie', // i.e. kherronism@gmail.com - email of the author
-  website: 'https://www.github.com/GMHughes' // i.e. https.://www.github.com/kherronism - the personal site of the author
+  website: 'https://www.github.com/GMHughes' // - the personal site of the author
 };
 export const creator = {
-  name: 'UCD Centre for Bioinformatics', // i.e. Katie Herron - creator's (developer) name.
-  email: 'kherronism@gmail.com',
+  name: 'UCD Centre for Bioinformatics', // i.e. Graham Hughes - creator's (developer) name.
+  email: 'g.hughes@ucd.ie',
   website: 'https://www.github.com/GMHughes',
-  social: 'https://x.com/kherronism'
+  social: 'https://x.com/GMHughes'
 };
 export const template = {
   name: 'Excellent Eleventy 3.1.3',
@@ -29,7 +29,7 @@ export const opengraph_default_alt =
   "Visible content: An Eleventy starter with CUBE CSS, Cube CSS, Every Layout, Design Tokens and Tailwind for uitility classes. A workflow for building modern and resilient websites, introduced by Andy Bell's project buildexcellentwebsit.es"; // alt text for default meta image"
 export const blog = {
   // RSS feed
-  name: 'UCDCentreBioinf',
+  name: 'UCD Centre for Bioinformatics',
   description: 'Keep in touch with the UCD Centre for Bioinformatics.',
   // feed links are looped over in the head. You may add more to the array.
   feedLinks: [

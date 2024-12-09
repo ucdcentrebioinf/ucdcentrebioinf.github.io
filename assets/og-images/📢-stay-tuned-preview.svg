@@ -75,7 +75,7 @@
     fill="#FBFBFB"
     letter-spacing="-0.5"
   >
-    <!-- <tspan x="160" y="580">UCDCentreBioinf · localhost:8080</tspan> -->
-    <tspan x="160" y="580">UCDCentreBioinf — tridubire.github.io</tspan>
+    <!-- <tspan x="160" y="580">UCD Centre for Bioinformatics · localhost:8080</tspan> -->
+    <tspan x="160" y="580">UCD Centre for Bioinformatics — tridubire.github.io</tspan>
   </text>
 </svg>

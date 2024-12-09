@@ -1,6 +1,6 @@
 {
-  "name": "UCDCentreBioinf - The virtual UCD Centre for Bioinformatics",
-  "short_name": "UCDCentreBioinf",
+  "name": "UCD Centre for Bioinformatics - The virtual UCD Centre for Bioinformatics",
+  "short_name": "UCD Centre for Bioinformatics",
   "start_url": "http://localhost:8080",
   "icons": [
     {

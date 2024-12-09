@@ -1,6 +1,6 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
-  "title": "UCDCentreBioinf",
+  "title": "UCD Centre for Bioinformatics",
   "language": "en",
   "home_page_url": "http://localhost:8080/",
   "feed_url": "http://localhost:8080/feed.json",

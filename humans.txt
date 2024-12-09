@@ -1,7 +1,7 @@
 
-/* TEAM */ Developer: UCD Centre for Bioinformatics Contact: kherronism@gmail.com Site:
+/* TEAM */ Developer: UCD Centre for Bioinformatics Contact: g.hughes@ucd.ie Site:
 https://www.github.com/GMHughes
 
-  Find me on: https://x.com/kherronism
+  Find me on: https://x.com/GMHughes
 
 /* SITE */ Doctype: HTML5

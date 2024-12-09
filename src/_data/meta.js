@@ -21,7 +21,7 @@ export const template = {
   name: 'Excellent Eleventy 3.1.3',
   website: 'https://eleventy-excellent.netlify.app/'
 };
-export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
+export const pathToSvgLogo = 'src/assets/svg/misc/newlogo.svg'; // used for favicon generation
 export const themeColor = '#6daa2c'; //  Manifest: defines the default theme color for the application
 export const themeBgColor = '#FBFBFB'; // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
 export const opengraph_default = '/assets/images/template/opengraph-default.jpg'; // fallback/default meta image
